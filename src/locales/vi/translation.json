@@ -1,3 +1,30 @@
 {
-    "test": "Đây chỉ là dòng test"
+    "notfound": "Không Tìm Thấy",
+    "tooltip": {
+        "changeTheme": "Thay đổi theme",
+        "languageTranslation": "Dịch ngôn ngữ",
+        "clickEditName": "Click đúp chuột để chỉnh sửa tên"
+    },
+    "home": {
+        "newPlan": "Kế Hoạch Mới",
+        "trashCan": "Thùng Rác"
+    },
+    "plan": {
+        "addPlan": "Thêm Kế Hoạch",
+        "updatePlan": "Cập Nhật Kế Hoạch",
+        "planName": "Tên kế hoạch",
+        "addPlanBtn": "Thêm kế hoạch",
+        "save": "Lưu",
+        "planningDate": "Ngày lập kế hoạch",
+        "totalMissions": "Tổng nhiệm vụ",
+        "missionsCompleted": "Đã hoàn thành",
+        "unfinishedMissions": "Chưa hoàn thành",
+        "noPlansMsg": "Chưa có kế hoạch nào được tạo ra",
+        "lstPlanTitle": "Danh sách kế hoạch",
+        "custom": "Tùy chỉnh",
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa",
+        "restore": "Khôi phục",
+        "forceDelete": "Xóa vĩnh viễn"
+    }
 }

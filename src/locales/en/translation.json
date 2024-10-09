@@ -1,3 +1,30 @@
 {
-    "test": "Here is line test"
+    "notfound": "Not Found",
+    "tooltip": {
+        "changeTheme": "Change theme",
+        "languageTranslation": "Language translation",
+        "clickEditName": "Double click to edit the name"
+    },
+    "home": {
+        "newPlan": "New Plan",
+        "trashCan": "Trash Can"
+    },
+    "plan": {
+        "addPlan": "Add Plan",
+        "updatePlan": "Update Plan",
+        "planName": "Plan name",
+        "addPlanBtn": "Add plan",
+        "save": "Save",
+        "planningDate": "Planning date",
+        "totalMissions": "Total missions",
+        "missionsCompleted": "Missions completed",
+        "unfinishedMissions": "Unfinished missions",
+        "noPlansMsg": "No plans have been created yet",
+        "lstPlanTitle": "List plans",
+        "custom": "Custom",
+        "edit": "Edit",
+        "delete": "Delete",
+        "restore": "Restore",
+        "forceDelete": "Force delete"
+    }
 }

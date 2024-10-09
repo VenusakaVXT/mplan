@@ -4,6 +4,10 @@
         align-items: center;
         justify-content: space-between;
 
+        .app__title {
+            cursor: pointer;
+        }
+
         .app_navbar {
             display: flex;
             align-items: center;
