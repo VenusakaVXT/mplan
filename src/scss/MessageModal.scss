@@ -1,0 +1,44 @@
+.modal__wrapper {
+    top: 0;
+    overflow: hidden;
+    animation: showModal 0.3s linear;
+
+    .modal__inner {
+        padding: 20px;
+        background-color: var(--bg-secondary);
+        border-radius: 8px;
+        width: 420px;
+        margin: auto;
+        margin-top: 30vh;
+
+        .modal__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 8px;
+            }
+        }
+
+        .modal__body {
+            
+        }
+
+        .modal__footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@keyframes showModal {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+    to {
+        top: 40%;
+        opacity: 1;
+    }
+}

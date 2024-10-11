@@ -7,7 +7,7 @@ import { randomColor, getInitials } from "../../util"
 import { Tooltip } from "react-tooltip"
 import { useNavigate } from "react-router-dom"
 
-const Header = () => {
+const Header: React.FC = (): JSX.Element => {
     const [isEditing, setIsEditing] = useState<boolean>(false)
     const [initials, setInitials] = useState<string>(localStorage.getItem("username") || "Guest")
     const { i18n, t } = useTranslation()
@@ -33,7 +33,7 @@ const Header = () => {
 
     return (
         <div className="app__header">
-            <h1 className="app__title" onClick={() => navigate("/")}>MPlan</h1>
+            <h1 className="app__title" onClick={(): void => navigate("/")}>MPlan</h1>
             <div className="app_navbar">
                 <div className="app_navbar-item" data-tooltip-id="theme-switch">
                     <ThemeSwitch />

@@ -5,11 +5,9 @@
         "languageTranslation": "Dịch ngôn ngữ",
         "clickEditName": "Click đúp chuột để chỉnh sửa tên"
     },
-    "home": {
-        "newPlan": "Kế Hoạch Mới",
-        "trashCan": "Thùng Rác"
-    },
     "plan": {
+        "newPlan": "Kế Hoạch Mới",
+        "trashCan": "Thùng Rác",
         "addPlan": "Thêm Kế Hoạch",
         "updatePlan": "Cập Nhật Kế Hoạch",
         "planName": "Tên kế hoạch",
@@ -25,6 +23,27 @@
         "edit": "Chỉnh sửa",
         "delete": "Xóa",
         "restore": "Khôi phục",
-        "forceDelete": "Xóa vĩnh viễn"
+        "forceDelete": "Xóa vĩnh viễn",
+        "deletePlan": "Xóa kế hoạch",
+        "sureDeletePlan": "Bạn có chắc chắn muốn xóa kế hoạch {{planName}} không?",
+        "yes": "Đồng ý",
+        "no": "Không đồng ý",
+        "lstDeletePlans": "Danh sách các kế hoạch đã bị xóa",
+        "deleteForeverPlan": "Xóa kế hoạch vĩnh viễn",
+        "sureDeleteForeverPlan": "Bạn có chắc chắn muốn xóa kế hoạch {{planName}} vĩnh viễn không?"
+    },
+    "back": "Trở về",
+    "mission": {
+        "trashMissions": "Thùng Xóa Nhiệm Vụ"
+    },
+    "toast": {
+        "addPlanSuccess": "Thêm kế hoạch thành công...",
+        "addPlanFailed": "Thêm kế hoạch thất bại!!!",
+        "updatePlanSuccess": "Cập nhật kế hoạch thành công...",
+        "updatePlanFailed": "Cập nhật kế hoạch thất bại!!!",
+        "deletePlanSuccess": "Xóa kế hoạch thành công...",
+        "deletePlanFailed": "Xóa kế hoạch thất bại!!!",
+        "restorePlanSuccess": "Khôi phục kế hoạch thành công...",
+        "restorePlanFailed": "Khôi phục kế hoạch thất bại!!!..."
     }
 }

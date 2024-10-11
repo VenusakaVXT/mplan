@@ -10,7 +10,7 @@ import ListPlan from "../Plan/ListPlan"
 
 const HomePage: React.FC = (): JSX.Element => {
     const [planData, setPlanData] = useState<PlanData>({
-        planId: "",
+        id: "",
         planName: "",
         missions: [],
         createdAt: new Date()
@@ -18,8 +18,8 @@ const HomePage: React.FC = (): JSX.Element => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const { t } = useTranslation()
 
-    const handleOpenModal = () => {
-        setPlanData({ ...planData, planId: generateObjectId() })
+    const handleOpenModal = (): void => {
+        setPlanData({ ...planData, id: generateObjectId() })
         setIsModalOpen(true)
     }
 
@@ -27,11 +27,11 @@ const HomePage: React.FC = (): JSX.Element => {
         <div className="home__wrapper">
             <div className="home__control">
                 <button className="btn" onClick={handleOpenModal}>
-                    <AddIcon sx={{ fontSize: "15px" }} /> {t("home.newPlan")}
+                    <AddIcon sx={{ fontSize: "15px" }} /> {t("plan.newPlan")}
                 </button>
                 <button className="btn">
                     <Typography component={Link} to="/trash/plan">
-                        <DeleteIcon sx={{ fontSize: "15px" }} /> {t("home.trashCan")}
+                        <DeleteIcon sx={{ fontSize: "15px" }} /> {t("plan.trashCan")}
                     </Typography>
                 </button>
             </div>

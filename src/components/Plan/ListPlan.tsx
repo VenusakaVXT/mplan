@@ -12,24 +12,24 @@ const ListPlan: React.FC = (): JSX.Element => {
     const { t } = useTranslation()
 
     useEffect((): void => {
-        const fetchPlans = async () => {
+        const getPlans = async (): Promise<void> => {
             try {
-                const fetchedPlans = await getPlanApi()
-                const sortedPlans = fetchedPlans.sort(
-                    (a: PlanData, b: PlanData) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-                )
+                const lstPlans = await getPlanApi()
+                const sortedPlans = lstPlans
+                    .filter((plan: PlanData) => !plan.deleted)
+                    .sort((a: PlanData, b: PlanData) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
                 setPlans(sortedPlans)
             } catch (error) {
                 console.error("Error:", error)
             }
         }
-        fetchPlans()
-    }, []) // remove [plans] to avoid re-render loops
+        getPlans()
+    }, [])
 
     return (
         <List className="plan__list">
             {plans.length !== 0
-                ? plans.map(plan => <PlanItem key={plan.planId} {...plan} />)
+                ? plans.map(plan => <PlanItem key={plan.id} {...plan} />)
                 : <NotFoundPage msg={t("plan.noPlansMsg")} largeFont={false} />
             }
         </List>

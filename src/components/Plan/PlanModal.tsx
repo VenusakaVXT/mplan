@@ -1,19 +1,20 @@
 import React, { useState } from "react"
 import { Modal } from "@mui/material"
 import CloseIcon from "@mui/icons-material/Close"
-import "../../scss/Modal.scss"
+import "../../scss/PlanModal.scss"
 import { useTranslation } from "react-i18next"
 import { postPlanApi, putPlanApi } from "../../mocks/apiService"
+import { toast } from "react-toastify"
 
 interface PlanModalProps {
     open: boolean
-    onClose: any
+    onClose: () => void
     isAdd: boolean
     planData: PlanData
 }
 
 export interface PlanData {
-    planId: string
+    id: string
     planName: string
     missions: Array<MissionData>
     createdAt: Date
@@ -21,7 +22,7 @@ export interface PlanData {
 }
 
 export interface MissionData {
-    missionId: string
+    id: string
     missionName: string
     date: Date
     startTime: Date
@@ -41,9 +42,13 @@ const PlanModal: React.FC<PlanModalProps> = ({ open, onClose, isAdd, planData })
             if (isAdd) {
                 console.log("New plan:", inputs)
                 await postPlanApi(inputs)
+                    .then(() => toast.success(t("toast.addPlanSuccess")))
+                    .catch(() => toast.error(t("toast.addPlanFailed")))
             } else {
                 console.log("Update plan:", inputs)
-                await putPlanApi(inputs)
+                await putPlanApi(inputs.id, inputs)
+                    .then(() => toast.warn(t("toast.updatePlanSuccess")))
+                    .catch(() => toast.error(t("toast.updatePlanFailed")))
             }
             onClose()
         } catch (error) {

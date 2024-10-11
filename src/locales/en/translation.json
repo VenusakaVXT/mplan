@@ -5,11 +5,9 @@
         "languageTranslation": "Language translation",
         "clickEditName": "Double click to edit the name"
     },
-    "home": {
-        "newPlan": "New Plan",
-        "trashCan": "Trash Can"
-    },
     "plan": {
+        "newPlan": "New Plan",
+        "trashCan": "Trash Can",
         "addPlan": "Add Plan",
         "updatePlan": "Update Plan",
         "planName": "Plan name",
@@ -25,6 +23,27 @@
         "edit": "Edit",
         "delete": "Delete",
         "restore": "Restore",
-        "forceDelete": "Force delete"
+        "forceDelete": "Force delete",
+        "deletePlan": "Delete plan",
+        "sureDeletePlan": "Are you sure you want to delete plan {{planName}}?",
+        "yes": "Yes",
+        "no": "No",
+        "lstDeletePlans": "List of deleted plans",
+        "deleteForeverPlan": "Delete forever plan",
+        "sureDeleteForeverPlan": "Are you sure you want to delete forever plan {{planName}}?"
+    },
+    "back": "Back",
+    "mission": {
+        "trashMissions": "Trash Missions"
+    },
+    "toast": {
+        "addPlanSuccess": "Add plan successfully...",
+        "addPlanFailed": "Add plan failed!!!",
+        "updatePlanSuccess": "Update plan successfully...",
+        "updatePlanFailed": "Update plan failed!!!",
+        "deletePlanSuccess": "Delete plan successfully...",
+        "deletePlanFailed": "Delete plan failed!!!",
+        "restorePlanSuccess": "Restore plan successfully...",
+        "restorePlanFailed": "Restore plan failed!!!..."
     }
 }
